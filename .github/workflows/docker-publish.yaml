@@ -8,15 +8,12 @@ name: Docker
 on:
   workflow_dispatch:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
     tags: ["*"]
 
 jobs:
   call-docker-build:
     uses: ethdevops/workflows/.github/workflows/upstream-docker-build.yaml@main
-    with:
-      repository: cryptpad/cryptpad
-      ref: ${{ github.ref }}
     secrets:
       docker_registry_user: ${{ secrets.DOCKER_REGISTRY_USER }}
       docker_registry_password: ${{ secrets.DOCKER_REGISTRY_SECRET }}
