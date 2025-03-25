@@ -1,2 +1,3 @@
 # cryptpad-docker
-Builds docker images for cryptpad
+
+Bundles the SSO plugin with the cryptpad docker image.
