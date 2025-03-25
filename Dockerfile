@@ -6,3 +6,6 @@ WORKDIR /cryptpad/lib/plugins
 
 # Clone the SSO plugin
 RUN git clone https://github.com/cryptpad/sso/
+
+# Revert working directory to the root of the cryptpad project
+WORKDIR /cryptpad
