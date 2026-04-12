@@ -1,4 +1,4 @@
-FROM cryptpad/cryptpad:version-2025.9.0
+FROM cryptpad/cryptpad:version-2026.2.2
 
 # Switch to the cryptpad user for remaining operations
 USER cryptpad
